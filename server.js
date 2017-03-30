@@ -33,6 +33,14 @@ app.get('/about',(req,res)=>{
     });
 });
 
+app.get('/proyects',(req,res)=>{
+    res.render('proyects.hbs',{
+        pageTitle:'about',
+        proyectsMessage:'this is a proyect'
+       
+    });
+});
+
 app.listen(port, () =>{
     console.log("port ",port )
 });
